@@ -79,7 +79,6 @@ img {
 
 /* STUDIO STYLES */
 
-.header,
 .main-nav,
 .contacts,
 .menu-nav,
@@ -95,8 +94,13 @@ img {
 
 /* Header styles */
 
-header {
+.header {
     border-bottom: 1px solid var(--top-line-color);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -307,13 +311,10 @@ header {
 
 /* Footer styles */
 
-footer {
-    background-color: var(--background-order-service-footer)
-}
-
-footer>.container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--background-order-service-footer)
 }
 
 .footer-contacts {
