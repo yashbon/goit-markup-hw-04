@@ -1,0 +1,433 @@
+/* 
+    header color                        #212121 
+    text color                          #757575 
+    top line color                      #ECECEC
+
+    overlay color                       rgba(47, 48, 58, 0.4)
+
+    main background color               #FFFFFF 
+    secondary background color          #F5F5F5
+    order button active color           #188CE8
+
+    accent color                        #2196F3
+    white color                         #FFFFFF
+    black color                         #000000 
+
+    background order service footer     #2F303A
+    text color contact footer           rgba(255, 255, 255, 0.6)
+
+    project border color                #EEEEEE
+    width gap                           30px
+*/
+
+:root {
+    --title-color: #212121;
+    --text-color: #757575;
+    --top-line-color: #ECECEC;
+    --main-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --overlay-color: rgba(47, 48, 58, 0.4);
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --background-order-service-footer: #2F303A;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --order-btn-actice: #188CE8;
+    --project-border-color: #EEEEEE;
+    --width-gap: 30px;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+ul,
+p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+/* STUDIO STYLES */
+
+.header,
+.main-nav,
+.contacts,
+.menu-nav,
+.features-items,
+.employee-cards-items,
+.list-services,
+.filter-btn-list,
+.gallery {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Header styles */
+
+header {
+    border-bottom: 1px solid var(--top-line-color);
+}
+
+.logo {
+    margin-right: 93px;
+    color: var(--black-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-first {
+    color: var(--accent-color);
+}
+
+.menu-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu-nav .active,
+.menu-nav a:hover,
+.menu-nav a:focus {
+    color: var(--accent-color);
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+}
+
+.menu-item+.menu-item {
+    margin-left: 50px;
+}
+
+
+/* Order a order-service */
+
+.order-service {
+    text-align: center;
+}
+
+.main-title {
+    max-width: 696px;
+    margin: 0 auto 30px;
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order-btn {
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+    background: var(--order-btn-actice);
+}
+
+
+/* Overlay styles*/
+
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0;
+    background-color: var(--background-order-service-footer);
+    background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)), url(../images/overlay.jpg);
+    background-position: center;
+}
+
+
+/* Features styles */
+
+.feature-title {
+    margin-bottom: 10px;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-items {
+    align-items: start;
+}
+
+.feature-item {
+    width: 270px;
+}
+
+.feature-item+.feature-item {
+    margin-left: 30px;
+}
+
+.feature-description {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Services styles*/
+
+.services {
+    padding-top: 0;
+}
+
+.services-title {}
+
+.services-title,
+.team-title {
+    margin-bottom: 50px;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
+    text-align: center;
+}
+
+.list-services-item+.list-services-item {
+    margin-left: 30px;
+}
+
+
+/* Team styles */
+
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.14;
+    text-align: center;
+}
+
+.employee-cards-item+.employee-cards-item {
+    margin-left: 30px;
+}
+
+.employee-cards-item {
+    background-color: var(--main-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.emploee-cards-text {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.employee-title {
+    margin-bottom: 10px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.employee-description {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: var(--background-order-service-footer)
+}
+
+footer>.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-contacts {
+    margin-top: 20px;
+}
+
+.logo-footer {
+    margin: 0;
+    color: var(--white-color);
+}
+
+.postal-address {
+    color: var(--white-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-contact {
+    color: var(--footer-contact-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contact-item+.contact-item {
+    margin-top: 9px;
+}
+
+.postal-address:hover,
+.postal-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);
+}
+
+
+/* PORTFOLION STILES */
+
+
+/* Buttons filter styles */
+
+.filter-btn {
+    padding: 6px 22px;
+    color: var(--title-color);
+    background-color: var(--secondary-background-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.filter-btn-list {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-btn-item+.filter-btn-item {
+    margin-left: 8px;
+}
+
+
+/* Galery projects styles */
+
+.gallery {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project {
+    flex-basis: calc(100% / 3 - var(--width-gap));
+}
+
+.project-description {
+    padding: 20px 24px;
+    border-left: 1px solid var(--project-border-color);
+    border-right: 1px solid var(--project-border-color);
+    border-bottom: 1px solid var(--project-border-color);
+}
+
+.project-title {
+    margin-bottom: 4px;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
