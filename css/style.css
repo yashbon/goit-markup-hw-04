@@ -18,6 +18,8 @@
 
     project border color                #EEEEEE
     width gap                           30px
+
+    social & client link color          #AFB1B8
 */
 
 :root {
@@ -34,6 +36,7 @@
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --order-btn-actice: #188CE8;
     --project-border-color: #EEEEEE;
+    --social-client-link-color: #AFB1B8;
     --width-gap: 30px;
 }
 
@@ -86,9 +89,11 @@ img {
 .employee-cards-items,
 .list-services,
 .filter-btn-list,
-.gallery {
+.gallery,
+.clients-list {
     display: flex;
     align-items: center;
+    column-gap: 30px;
 }
 
 
@@ -239,9 +244,10 @@ img {
     width: 270px;
 }
 
-.features-list-item+.features-list-item {
+
+/* .features-list-item+.features-list-item {
     margin-left: 30px;
-}
+} */
 
 .feature-description {
     font-size: 14px;
@@ -266,9 +272,10 @@ img {
     text-align: center;
 }
 
-.list-services-item+.list-services-item {
+
+/* .list-services-item+.list-services-item {
     margin-left: 30px;
-}
+} */
 
 
 /* Team styles */
@@ -285,9 +292,10 @@ img {
     text-align: center;
 }
 
-.employee-cards-item+.employee-cards-item {
+
+/* .employee-cards-item+.employee-cards-item {
     margin-left: 30px;
-}
+} */
 
 .employee-cards-item {
     background-color: var(--main-background-color);
@@ -318,9 +326,10 @@ img {
 /* Regulary clients */
 
 .client-item {
-    outline: 1px solid red;
     width: 170px;
     height: 92px;
+    border: 1px solid var(--social-client-link-color);
+    border-radius: 4px;
 }
 
 
@@ -434,6 +443,9 @@ img {
     font-size: 16px;
     line-height: 1.88;
 }
+
+
+/* Hiden title */
 
 .visually-hidden {
     position: absolute;
