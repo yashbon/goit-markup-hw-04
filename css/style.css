@@ -149,31 +149,34 @@ img {
     color: var(--accent-color);
 }
 
+.envelope,
+.smartphone {
+    margin-right: 10px;
+}
+
 .contacts {
     margin-left: auto;
     column-gap: 50px;
 }
 
 .contacts-link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--text-color);
+    fill: var(--text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
-
-
-/* .menu-item+.menu-item {
-    margin-left: 50px;
-} */
 
 
 /* Order a order-service */
@@ -236,8 +239,10 @@ img {
 /* Features styles */
 
 .icon-background {
+    display: flex;
     height: 120px;
     margin-bottom: 30px;
+    padding: 25px 100px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
 }
@@ -259,10 +264,11 @@ img {
     width: 270px;
 }
 
-.icon-background>svg {
+
+/* .icon-background>svg {
     width: 270px;
     height: 120px;
-}
+} */
 
 
 /* .features-list-item+.features-list-item {
@@ -354,13 +360,20 @@ img {
     border-radius: 4px;
 }
 
-.client-link {}
+.client-link {
+    display: flex;
+    justify-content: center;
+    fill: var(--social-client-link-color);
+}
 
 .client-link:hover,
 .client-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
+
+.client-logo {}
 
 
 /* Footer styles */
@@ -432,23 +445,36 @@ img {
 
 .social-link-item {
     /* display: block; */
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
     border-radius: 50%;
     width: 44px;
     height: 44px;
 }
 
 .social-link {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    fill: var(--social-client-link-color);
     background-color: var(--footer-soclink-background);
+}
+
+.footer .social-link {
+    fill: var(--white-color);
 }
 
 .social-link:hover,
 .social-link:focus {
     background-color: var(--accent-color);
+    fill: var(--white-color);
+}
+
+.social-ikon {
+    width: 20px;
+    height: 20px;
 }
 
 
