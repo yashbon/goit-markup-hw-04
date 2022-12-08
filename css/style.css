@@ -524,6 +524,11 @@ img {
     flex-basis: calc(100% / 3 - var(--width-gap));
 }
 
+.project:hover,
+.project:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-description {
     padding: 20px 24px;
     border-left: 1px solid var(--project-border-color);
