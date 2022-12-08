@@ -264,17 +264,6 @@ img {
     width: 270px;
 }
 
-
-/* .icon-background>svg {
-    width: 270px;
-    height: 120px;
-} */
-
-
-/* .features-list-item+.features-list-item {
-    margin-left: 30px;
-} */
-
 .feature-description {
     font-size: 14px;
     line-height: 1.7;
@@ -299,11 +288,6 @@ img {
 }
 
 
-/* .list-services-item+.list-services-item {
-    margin-left: 30px;
-} */
-
-
 /* Team styles */
 
 .team {
@@ -317,11 +301,6 @@ img {
     line-height: 1.14;
     text-align: center;
 }
-
-
-/* .employee-cards-item+.employee-cards-item {
-    margin-left: 30px;
-} */
 
 .employee-cards-item {
     background-color: var(--main-background-color);
@@ -379,7 +358,6 @@ img {
 /* Footer styles */
 
 .footer {
-    /* display: flex; */
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-order-service-footer)
@@ -425,10 +403,6 @@ img {
 }
 
 .join {
-    /* outline: 1px solid red; */
-    /* font-family: 'Roboto'; */
-    /* font-style: normal; */
-    /* font-weight: 700; */
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
@@ -444,17 +418,14 @@ img {
 }
 
 .social-link-item {
-    /* display: block; */
-    /* outline: 1px solid orange; */
-    border-radius: 50%;
     width: 44px;
     height: 44px;
 }
 
 .social-link {
     display: flex;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
