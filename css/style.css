@@ -8,6 +8,7 @@
     main background color               #FFFFFF 
     secondary background color          #F5F5F5
     order button active color           #188CE8
+    overlay background color            #C4C4C4
 
     accent color                        #2196F3
     white color                         #FFFFFF
@@ -31,6 +32,7 @@
     --main-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     --overlay-color: rgba(47, 48, 58, 0.4);
+    --overlay-background-color: #C4C4C4;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --black-color: #000000;
@@ -91,7 +93,6 @@ img {
 .features-list,
 .employee-cards-items,
 .list-services,
-.filter-btn-list,
 .gallery,
 .clients-list {
     display: flex;
@@ -156,7 +157,6 @@ img {
 
 .contacts {
     margin-left: auto;
-    column-gap: 50px;
 }
 
 .contacts-link {
@@ -201,9 +201,6 @@ img {
     padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 4px;
-    border: none;
-    background-color: var(--accent-color);
     color: var(--white-color);
     font-family: inherit;
     font-weight: 700;
@@ -212,6 +209,10 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .order-btn:hover,
@@ -224,11 +225,10 @@ img {
 
 .overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 200px 0;
-    background-color: var(--background-order-service-footer);
+    background-color: var(--overlay-background-color);
     background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)), url(../images/overlay.jpg);
     background-position: center center;
     background-size: cover;
@@ -238,11 +238,17 @@ img {
 
 /* Features styles */
 
+.feauteres-icons {
+    width: 70px;
+    height: 70px;
+}
+
 .icon-background {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
 }
@@ -454,6 +460,12 @@ img {
 
 /* Buttons filter styles */
 
+.filter-btn-list {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
 .filter-btn {
     padding: 6px 22px;
     color: var(--title-color);
@@ -495,8 +507,12 @@ img {
     flex-basis: calc(100% / 3 - var(--width-gap));
 }
 
-.project:hover,
-.project:focus {
+.project-link {
+    display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
